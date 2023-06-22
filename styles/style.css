@@ -62,13 +62,17 @@ img{
     padding: 3rem 0;
 }
 
+.main-heading{
+    font-size: 1.3rem;
+}
+
 .card{
     min-height: 200px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 3px 3px 8px gray;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -83,38 +87,6 @@ img{
     overflow: hidden;
 }
 
-.card--description{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: gray;
-    border-radius: 8px;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid green;
-    color: white;
-}
-
-.description-btn{
-    display: block;
-    padding: 0.55rem 1rem;
-    border-radius: 50px;
-    background-color: white;
-    border: none;
-    width: 40%;
-    margin: 1.5rem auto;
-    font-weight: 500;
-}
-
-.description-btn:hover{
-    background-color: var(--color-bg);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    font-weight: 600;
-}
-
 .card--content{
     padding: 1rem 0;
     text-align: center;
@@ -124,6 +96,12 @@ img{
 .card--content p:hover{
     font-weight: 600;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.card--content a{
+    text-decoration: none;
+    color: black;
 }
 
 @media (min-width: 1200px){
