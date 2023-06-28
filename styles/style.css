@@ -147,6 +147,7 @@ img{
 }
 
 .btn{
+    text-decoration: none;
     display: inline-block;
     border-radius: 8px;
     padding: 0.55rem;
