@@ -81,7 +81,7 @@ img{
     display: flex;
     flex-direction: column; 
     align-items: center;   
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .card--img{
@@ -97,13 +97,13 @@ img{
     text-transform: uppercase;
 }
 
-.card--content p:hover{
+.card--content .card--title:hover{
     font-weight: 600;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
 }
 
-.card--content a{
+.card--title{
     text-decoration: none;
     color: black;
 }
@@ -132,7 +132,7 @@ img{
 }
 
 .tags{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,15 +147,22 @@ img{
 }
 
 .btn{
+    display: inline-block;
     border-radius: 8px;
     padding: 0.55rem;
-    /* font-size: 0.55rem; */
+    font-size: 0.75rem;
     border: none;
     background-color: #941e2d;
     color: #fff;
     cursor: pointer;
 }
+
 @media (min-width: 600px) and (max-width: 1199px){
+    .cards{
+        display: flex;
+        gap: 50px;
+    }
+
     .card{
         max-width: 40%;
     }
@@ -171,8 +178,25 @@ img{
         padding: 2rem 0;
     }
 
+    .cards{
+        display: flex;
+        gap: 50px;
+    }
+
     .card{
         max-width: 30%;
+    }
+
+    .card--img{
+        min-height: 200px;
+    }
+
+    .card--img img{
+        height: 100%;
+    }
+
+    .tags{
+        width: 50%;
     }
 
     .tag:hover, .btn:hover{
