@@ -158,10 +158,17 @@ img{
     cursor: pointer;
 }
 
+.btn--share{
+    margin-left: -20px;
+    width: 32px;
+    font-size: 0.55rem;
+}
+
 @media (min-width: 600px) and (max-width: 1199px){
     .cards{
         display: flex;
         gap: 50px;
+        flex-wrap: wrap; 
     }
 
     .card{
